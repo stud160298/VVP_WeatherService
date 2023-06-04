@@ -1,11 +1,12 @@
-﻿// WeatherService.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
-
+﻿#include "Weather.h"
+#include "Service.h"
+#include "XmlService.h"
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	XmlService xs;
+	Weather w1 = xs.getWeather("weather.xml");
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
